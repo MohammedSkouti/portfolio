@@ -510,6 +510,12 @@ img {
     align-items: center;
     text-align: initial;
   }
+    .skills__Education {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    text-align: initial;
+  }
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
