@@ -338,7 +338,9 @@ img {
 .skills__img {
   border-radius: .5rem;
 }
-
+.education__img {
+  border-radius: .2rem;
+}
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
