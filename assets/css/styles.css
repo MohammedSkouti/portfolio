@@ -340,6 +340,8 @@ img {
 }
 .education__img {
   border-radius: .2rem;
+   max-width: 50%;
+  max-hight: 50%;
 }
 /* ===== WORK =====*/
 .work__container {
