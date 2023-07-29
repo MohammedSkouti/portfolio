@@ -1,4 +1,4 @@
-/*===== MENU SHOW =====*/ 
+0/*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -12,6 +12,10 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
+
+
+
+
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -54,12 +58,11 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
-sr.reveal('.education__data, .education__img, .education__input',{interval: 200}); 
-// Replace this number with the actual number of questions you've solved on LeetCode
+sr.reveal('.education__data, .work__img, .contact__input',{interval: 200}); 
 <!--===== JS FOR COUNTER =====-->
 
     // Replace this number with the actual number of questions you've solved on LeetCode
-    const solvedQuestions = 133;
+    const solvedQuestions = 131;
 
     // Function to update the counter
     function updateCounter() {
@@ -82,3 +85,4 @@ sr.reveal('.education__data, .education__img, .education__input',{interval: 200}
 
     // Call the updateCounter function when the page is loaded
     window.addEventListener("load", updateCounter);
+
