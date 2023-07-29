@@ -61,28 +61,30 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 sr.reveal('.education__data, .work__img, .contact__input',{interval: 200}); 
 <!--===== JS FOR COUNTER =====-->
 
- 
-    // Replace this number with the actual number of questions you've solved on LeetCode
-    const solvedQuestions = 133;
+// JavaScript for counter animation
+const counter = document.getElementById("question-counter");
+const targetCount = 133; // Change this to your desired target count
+let currentCount = 0;
 
-    // Function to update the counter
-    function updateCounter() {
-        const counterElement = document.getElementById("question-counter");
-        let count = 0;
+function updateCounter() {
+  const increment = targetCount / 200; // Speed of animation (larger number = slower animation)
+  if (currentCount < targetCount) {
+    currentCount += increment;
+    counter.textContent = Math.floor(currentCount);
+    requestAnimationFrame(updateCounter);
+  } else {
+    counter.textContent = targetCount;
+  }
+}
 
-        // Function to increase the counter with a delay for the animation effect
-        function increaseCounter() {
-            count++;
-            counterElement.textContent = count;
+// Call the function when the element is in the viewport
+function handleScrollAnimation() {
+  const counterPosition = counter.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+  if (counterPosition < windowHeight) {
+    updateCounter();
+    window.removeEventListener("scroll", handleScrollAnimation);
+  }
+}
 
-            // When the counter reaches the actual number of solved questions, stop the animation
-            if (count < solvedQuestions) {
-                setTimeout(increaseCounter, 20); // Adjust the animation speed (lower value makes it faster)
-            }
-        }
-
-        increaseCounter();
-    }
-
-    // Call the updateCounter function when the page is loaded
-    window.addEventListener("load", updateCounter);
+window.addEventListener("scroll", handleScrollAnimation);
