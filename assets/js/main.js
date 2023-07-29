@@ -59,7 +59,7 @@ sr.reveal('.education__data, .education__img, .education__input',{interval: 200}
 <!--===== JS FOR COUNTER =====-->
 
     // Replace this number with the actual number of questions you've solved on LeetCode
-    const solvedQuestions = 150;
+    const solvedQuestions = 133;
 
     // Function to update the counter
     function updateCounter() {
