@@ -586,7 +586,7 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  bottom: -0.5rem; /* Adjust this value to control the distance of the line from the title */
   background-color: var(--first-color);
 }
 
