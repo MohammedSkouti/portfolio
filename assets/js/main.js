@@ -61,8 +61,9 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 sr.reveal('.education__data, .work__img, .contact__input',{interval: 200}); 
 <!--===== JS FOR COUNTER =====-->
 
+ 
     // Replace this number with the actual number of questions you've solved on LeetCode
-    const solvedQuestions = 131;
+    const solvedQuestions = 133;
 
     // Function to update the counter
     function updateCounter() {
@@ -85,4 +86,3 @@ sr.reveal('.education__data, .work__img, .contact__input',{interval: 200});
 
     // Call the updateCounter function when the page is loaded
     window.addEventListener("load", updateCounter);
-
