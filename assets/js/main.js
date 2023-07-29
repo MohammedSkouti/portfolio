@@ -56,26 +56,29 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 sr.reveal('.education__data, .education__img, .education__input',{interval: 200}); 
 // Replace this number with the actual number of questions you've solved on LeetCode
-const solvedQuestions = 150;
+<!--===== JS FOR COUNTER =====-->
 
-// Function to update the counter
-function updateCounter() {
-    const counterElement = document.getElementById("question-counter");
-    let count = 0;
+    // Replace this number with the actual number of questions you've solved on LeetCode
+    const solvedQuestions = 150;
 
-    // Function to increase the counter with a delay for the animation effect
-    function increaseCounter() {
-        count++;
-        counterElement.textContent = count;
+    // Function to update the counter
+    function updateCounter() {
+        const counterElement = document.getElementById("question-counter");
+        let count = 0;
 
-        // When the counter reaches the actual number of solved questions, stop the animation
-        if (count < solvedQuestions) {
-            setTimeout(increaseCounter, 20); // Adjust the animation speed (lower value makes it faster)
+        // Function to increase the counter with a delay for the animation effect
+        function increaseCounter() {
+            count++;
+            counterElement.textContent = count;
+
+            // When the counter reaches the actual number of solved questions, stop the animation
+            if (count < solvedQuestions) {
+                setTimeout(increaseCounter, 20); // Adjust the animation speed (lower value makes it faster)
+            }
         }
+
+        increaseCounter();
     }
 
-    increaseCounter();
-}
-
-// Call the updateCounter function when the page is loaded
-window.addEventListener("load", updateCounter);
+    // Call the updateCounter function when the page is loaded
+    window.addEventListener("load", updateCounter);
