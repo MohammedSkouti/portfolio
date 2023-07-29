@@ -562,9 +562,31 @@ img {
     width: 450px;
   }
 }
-/* Add more CSS styles below the existing ones */
 
 /*===== COUNTER SECTION =====*/
+.counter__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9; /* Change this to your desired background color */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.counter__number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.counter__text {
+  font-size: 1.2rem;
+  color: var(--second-color);
+  text-transform: uppercase;
+}
+
 .counter {
   text-align: center;
 }
@@ -596,18 +618,7 @@ img {
   align-items: center;
 }
 
-.counter__number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--first-color);
-}
 
-.counter__text {
-  font-size: 1.2rem;
-  color: var(--second-color);
-  text-transform: uppercase;
-  margin-top: var(--mb-2);
-}
 
 /*===== SCROLL TO TOP BUTTON =====*/
 .scroll-to-top {
@@ -646,4 +657,3 @@ img {
     width: 450px;
   }
 }
-
