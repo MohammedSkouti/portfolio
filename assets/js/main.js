@@ -63,7 +63,7 @@ sr.reveal('.education__data, .work__img, .contact__input',{interval: 200});
 
 // JavaScript for counter animation
 const counter = document.getElementById("question-counter");
-const targetCount = 133; // Change this to your desired target count
+const targetCount = 135; // Change this to your desired target count
 let currentCount = 0;
 
 function updateCounter() {
