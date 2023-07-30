@@ -67,7 +67,7 @@ const targetCount = 135; // Change this to your desired target count
 let currentCount = 0;
 
 function updateCounter() {
-  const increment = targetCount /20; // Speed of animation (larger number = slower animation)
+  const increment = targetCount /60; // Speed of animation (larger number = slower animation)
   if (currentCount < targetCount) {
     currentCount += increment;
     counter.textContent = Math.floor(currentCount);
