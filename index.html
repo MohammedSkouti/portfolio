@@ -93,53 +93,6 @@
     </div>
 </section>
 
-ChatGPT
-To make the entire <div> clickable to the link, you need to wrap the entire content inside the <a> tag. Here's the updated code:
-
-html
-Copy code
-<section class="counter section">
-    <h2 class="section-title">
-        <a href="https://leetcode.com/session/" target="_blank" style="display: flex; align-items: center;">
-            <iconify-icon icon="simple-icons:leetcode" style="color: gold; margin-right: 0.5rem;"></iconify-icon>
-            Problems Solved on LeetCode
-        </a>
-    </h2>
-    <div class="counter__data bd-grid">
-        <div class="counter__wrapper">
-            <div class="counter__number" id="question-counter">0</div>
-            <div class="counter__text">Problems Solved</div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-User
- i mean the counter div "https://leetcode.com/session/
-ChatGPT
-Apologies for the confusion. To make the counter <div> clickable and link to the specified URL, you can add an anchor <a> tag around the counter <div> and set its href attribute to the desired link. Here's the updated code:
-
-html
-Copy code
-<section class="counter section">
-    <h2 class="section-title">
-        <a href="https://leetcode.com/session/" target="_blank" style="display: flex; align-items: center;">
-            <iconify-icon icon="simple-icons:leetcode" style="color: gold; margin-right: 0.5rem;"></iconify-icon>
-		 </a>
-            Problems Solved on LeetCode
-       
-    </h2>
-        <div class="counter__data bd-grid">
-            <div class="counter__wrapper">
-                <div href="https://leetcode.com/session/" target="_blank" class="counter__number" id="question-counter">0</div>
-                <div class="counter__text">Problems Solved</div>
-            </div>
-        </div>
-    </a>
-</section>
 
 
 
