@@ -115,6 +115,21 @@ img {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
+.l-main {
+  padding-top: var(--header-height); /* Add this line to create space for the fixed navigation bar */
+}
+
+.l-header {
+  /* Existing styles... */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+/* Add more CSS styles below the existing ones */
 
 /*===== NAV =====*/
 .nav {
