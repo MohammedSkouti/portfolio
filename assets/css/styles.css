@@ -26,7 +26,7 @@
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
@@ -140,7 +140,7 @@ img {
   font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
