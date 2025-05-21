@@ -728,3 +728,46 @@ img {
     width: 450px;
   }
 }
+
+/* PROJECT LINKS SECTION */
+.project-links__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-link__card {
+    background: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-link__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-link__card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--title-color);
+}
+
+.project-link__card p {
+    margin-bottom: 1rem;
+    font-size: var(--small-font-size);
+}
+
+.project-link__card .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--first-color);
+    color: #fff;
+    border-radius: 0.25rem;
+    transition: 0.3s;
+}
+
+.project-link__card .button:hover {
+    background: var(--first-color-alt);
+}
